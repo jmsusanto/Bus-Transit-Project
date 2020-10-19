@@ -61,13 +61,7 @@ In this plot, for each square area, its color (value) shows how many other uniqu
 
 # Measures of Productivity in the Transit Industry
 
-As defined by The miles that vehicles travel while in revenue service. The measure excludes miles that vehicles travel for deadhead services (leaving or returning to the garage or yard facility, changing routes, or when there is no expectation of carrying revenue passengers), operator training, maintenance testing, and school bus and charter services.
+The productivity of a business or a system is measured in the context of its outputs and its costs. In the private sector, the outputs can be easily defined by factors such as revenue and growth. However, in the context of the public sector, as the main motive is almost never to maximize revenue and profits, it becomes more complicated. There are two main ways to approach the output of a public transit system: A supply side and a demand side output. A supply-side output concept measures the amount of service that is made available, regardless of how much is actually consumed [1]. This includes measurements of Vehicle Revenue Miles (VRM) and Vehicle Revenue Hours (VRH).  VRM is a measurement of the miles that vehicles travel while in revenue service. The measure excludes miles that vehicles travel for deadhead services (leaving or returning to the garage or yard facility, changing routes, or when there is no expectation of carrying revenue passengers), operator training, maintenance testing, and school bus and charter services[2]. VRH is similar to VRM, but is measured in time of service rather than its distance travelled. 
 
-A vehicle revenue mile is defined as one vehicle traveling one mile with revenue passengers are on board, and is one of the most effective metrics when evaluating a public transportation system
 
-In order to study the efficiency with which urban transit systems deliver services, the BLS productivity program has
-developed a new index of labor productivity. BLS defines output in several transportation industries as the distance
-people or freight are carried. The definition of output for urban transit systems conforms to this precedent, as the
-number of passenger miles traveled serves as the basis of output for the industry. After growing from 2007 to
-2013, labor productivity in urban transit systems fell for 2 consecutive years. This labor productivity measure is
-available on the BLS website and will be updated annually.
+
