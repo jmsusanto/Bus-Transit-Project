@@ -65,6 +65,6 @@ The productivity of a business or a system is measured in the context of its out
 
 
 ### Figure 9:
-<img src = "VRM_all.png">
+<img src = "VRM_all_v2.png">
 
 
