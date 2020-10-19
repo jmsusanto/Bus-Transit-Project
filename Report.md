@@ -59,3 +59,15 @@ This plot shows the sum of the daily ridership of all the stops in each square a
 In this plot, for each square area, its color (value) shows how many other unique square areas can be accessed without transferring. Squares around the UW Campus area can access almost every other square in Madison. However, as evident in the plot, some areas of Madison have very low accessibility if no transfers are made. To get a better idea of the the coverage in certain areas of Madison, we also need to look at the accessibility with one transfer.
 
 
+# Measures of Productivity in the Transit Industry
+
+As defined by The miles that vehicles travel while in revenue service. The measure excludes miles that vehicles travel for deadhead services (leaving or returning to the garage or yard facility, changing routes, or when there is no expectation of carrying revenue passengers), operator training, maintenance testing, and school bus and charter services.
+
+A vehicle revenue mile is defined as one vehicle traveling one mile with revenue passengers are on board, and is one of the most effective metrics when evaluating a public transportation system
+
+In order to study the efficiency with which urban transit systems deliver services, the BLS productivity program has
+developed a new index of labor productivity. BLS defines output in several transportation industries as the distance
+people or freight are carried. The definition of output for urban transit systems conforms to this precedent, as the
+number of passenger miles traveled serves as the basis of output for the industry. After growing from 2007 to
+2013, labor productivity in urban transit systems fell for 2 consecutive years. This labor productivity measure is
+available on the BLS website and will be updated annually.
