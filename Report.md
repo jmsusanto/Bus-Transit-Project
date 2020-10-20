@@ -9,6 +9,7 @@ There are two types of frequency: by Route or by Stop. Let's start with frequenc
 </p>
 <div align="center"> <strong> Figure 1: Route Frequency over a Day</strong>
 <br/><br/><br/>
+<div align="left">
 
 This plot shows the aggregate frequency at an hourly interval over the day for both a Weekday and Weekend. It can observed that the Transit service starts at 4:00 AM for both weekdays and weekends. The level of service during a weekday evidently higher at every time of the day, but this is especially true from around 8:00 AM to 6:00 PM. There are also clear peaks of frequency during the weekday, at the 8:00 to 9:00 AM interval and the 4:00 to 6:00 PM interval. These are often times when people are either going to work or going back home from work. An increased demand of transit service is met with an increase in the level of service itself. This brings up the question: are there any other intervals of time during the day in which high demand is met with low levels of service, or vice-versa? This could be an area of focus in the future, but it will be rather difficult to achieve without hourly ridership data (an indicator of transit demand)
 
