@@ -67,7 +67,7 @@ The productivity of a business or a system is measured in the context of its out
 <p align="center">
 <img src = "VRM_all_v4.png" width="600" align="center"/>
 </p>
-<div align="center"> <strong> Figure 9: Vehicle Route Miles Over Time:</strong>
+<div align="center"> <strong> Figure 9: Vehicle Route Miles Over Time</strong>
 <br/><br/><br/>
   
 
