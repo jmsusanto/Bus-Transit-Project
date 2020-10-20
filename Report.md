@@ -65,9 +65,11 @@ This plot shows the sum of the daily ridership of all the stops in each square a
 In this plot, for each square area, its color (value) shows how many other unique square areas can be accessed without transferring. Squares around the UW Campus area can access almost every other square in Madison. However, as evident in the plot, some areas of Madison have very low accessibility if no transfers are made. To get a better idea of the the coverage in certain areas of Madison, we also need to look at the accessibility with one transfer.
 
 
+# OCT20 START
 # Measures of Productivity in the Transit Industry
 
 The productivity of a business or a system is measured in the context of its outputs and its costs. In the private sector, the outputs can be easily defined by factors such as revenue and growth. However, in the context of the public sector, as the main motive is almost never to maximize revenue and profits, it becomes more complicated. There are two main ways to approach the output of a public transit system: A supply side and a demand side output. 
+
 
 ## Supply Side Outputs
 A supply-side output concept measures the amount of service that is made available, regardless of how much is actually consumed [1]. This includes measurements of Vehicle Revenue Miles (VRM) and Vehicle Revenue Hours (VRH).  VRM is a measurement of the miles that vehicles travel while in revenue service. The measure excludes miles that vehicles travel for deadhead services (leaving or returning to the garage or yard facility, changing routes, or when there is no expectation of carrying revenue passengers), operator training, maintenance testing, and school bus and charter services[2]. VRH is similar to VRM, but is measured in time of service rather than its distance travelled. 
@@ -81,3 +83,5 @@ A supply-side output concept measures the amount of service that is made availab
   
 
 <div align="left"> <strong> Figure 9 </strong> shows trend of Vechicle Route Miles over time for the city of Madison, the average city in Wisconsin, and the average city in the United States. Before early 2020, it is evident that Madison consistently has more VRM than the average city in Wisconsin and in the US. From a supply side view, we can say that Madison offers a more productive service which is made available regardless of how many riders are actually on the bus. Dividing the value of VRM by the overall budget of the bus transit system at a given time interval can account for how efficiently funds and labor are being translated into services offered. As can be seen towards the end the <strong>Figure 9</strong>, VRM starts to drop dramatically for all 3 cities. This is due to the outbreak of COVID-19, leading to bus operators around the US deciding to lower their service, likely to both reduce the spread of COVID-19 and to match the drops in demand as well. 
+
+# OCT20 END
