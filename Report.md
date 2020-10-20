@@ -1,9 +1,5 @@
-# Frequency of Bus Routes 
-
-
-## General Overview
-
-The book 'Human Transit' highlighted the importance of 'frequency' to a transit system. Frequency is not only a key measurement of the level of service of transit, but it is also relatable to the general public as it can be easily converted into average waiting time between buses.
+## Frequency of Bus Routes 
+Frequency is defined as the number of bus trips in the same direction of travel within a specified time period, and is commonly expressed in trips per hour. It is not only a key measurement of the level of service of transit, but it is also relatable to the general public as it can be easily converted into average waiting time between buses.
 
 There are two types of frequency: by Route or by Stop. Let's start with frequency by Route.
 
