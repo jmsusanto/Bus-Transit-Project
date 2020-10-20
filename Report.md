@@ -61,6 +61,7 @@ This plot shows the sum of the daily ridership of all the stops in each square a
 </p>
 <div align="center"> <strong> Figure 9: Vehicle Route Miles Over Time</strong>
 <br/><br/><br/>
+<div align="left">
 
 In this plot, for each square area, its color (value) shows how many other unique square areas can be accessed without transferring. Squares around the UW Campus area can access almost every other square in Madison. However, as evident in the plot, some areas of Madison have very low accessibility if no transfers are made. To get a better idea of the the coverage in certain areas of Madison, we also need to look at the accessibility with one transfer.
 
