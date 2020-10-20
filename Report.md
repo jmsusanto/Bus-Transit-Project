@@ -53,7 +53,7 @@ Then plot depicts the position of stops that take in more than 5 riders a day. O
 
 This plot shows the sum of the daily ridership of all the stops in each square area. Each side of the square represents 0.25 miles, which is approximately 5 minutes of casual walking. 
 
-## Figure 8:
+
 
 <p align="center">
 <img src="NumOfRegionsAccessed.png" width="600" align="center"/>
