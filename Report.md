@@ -65,6 +65,6 @@ The productivity of a business or a system is measured in the context of its out
 
 
 ### Figure 9: Vehicle Route Miles Over Time:
-<img src = "VRM_all_v4.png" width="600" class="center"/>
+<img src = "VRM_all_v4.png" width="600" align="center">
 
 **Figure 9** shows trend of Vechicle Route Miles over time for the city of Madison, the average city in Wisconsin, and the average city in the United States. Before early 2020, it is evident that Madison consistently has more VRM than the average city in Wisconsin and in the US. From a supply side view, we can say that Madison offers a more productive service which is made available regardless of how many riders are actually on the bus. Dividing the value of VRM by the overall budget of the bus transit system at a given time interval can account for how efficiently funds and labor are being translated into services offered. As can be seen towards the end the **Figure 9**, VRM starts to drop dramatically for all 3 cities. This is due to the outbreak of COVID-19, leading to bus operators around the US deciding to lower their service, likely to both reduce the spread of COVID-19 and to match the drops in demand as well. 
