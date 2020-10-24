@@ -57,9 +57,9 @@ This plot shows the sum of the daily ridership of all the stops in each square a
 
 
 <p align="center">
-<img src="NumOfRegionsAccessed.png" width="600" align="center"/>
+<img src="NumOfRegionsAccessed.png" width="1000" align="center"/>
 </p>
-<div align="center"> <strong> Figure 9: Vehicle Route Miles Over Time</strong>
+<div align="center"> <strong> Figure 8: Accessibility with No Transfers</strong>
 <br/><br/><br/>
 <div align="left">
 
