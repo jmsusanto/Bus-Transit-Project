@@ -49,9 +49,13 @@ The plot depicts the position of efficient and inefficient bus stops in Madison.
 
 Then plot depicts the position of stops that take in more than 5 riders a day. Once again, stops that take in more than 5 riders a day are most common around the UW campus area, likely for the same reasons as mentioned above. As we move away from the campus area, there is an noticably high number of bus stops that do not even have 5 riders a day. While it may initially seem as if those stops are redundant, this is certainly not always the case. Similar to how certain bus routes have the goal of coverage rather than maximising ridership, the same could be said for bus stops. The problem with this plot is that stops often come in pairs: one for each direction of the road. Ridership values are taken whenever a passenger boards the bus, but not when they leave the bus. In reality, the stops in which people leave the bus are just as important as the stops they use to board the bus. To solve this issue, stops in an area are grouped together as depicted in Figure 7.
 
-## Figure 7: 
-<img src="RidershipMadison.png">
 
+<p align="center">
+<img src="RidershipMadison.png" width="1000" align="center"/>
+</p>
+<div align="center"> <strong> Figure 7: Transit Ridership In Madison (Per Box) </strong>
+<br/><br/><br/>
+<div align="left">
 This plot shows the sum of the daily ridership of all the stops in each square area. Each side of the square represents 0.25 miles, which is approximately 5 minutes of casual walking. 
 
 
