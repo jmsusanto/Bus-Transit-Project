@@ -53,10 +53,10 @@ Then plot depicts the position of stops that take in more than 5 riders a day. O
 <p align="center">
 <img src="RidershipMadison.png" width="1000" align="center"/>
 </p>
-<div align="center"> <strong> Figure 7: Transit Ridership In Madison (Per Box) </strong>
+<div align="center"> <strong> Figure 7: Daily Transit Ridership In Madison for an Average Weekday (Per Box) </strong>
 <br/><br/><br/>
 <div align="left">
-This plot shows the sum of the daily ridership of all the stops in each square area. Each side of the square represents 0.25 miles, which is approximately 5 minutes of casual walking. 
+This plot shows the sum of the daily ridership of all the stops in each square area. Each side of the square represents 0.25 miles, which is approximately 5 minutes of casual walking. By grouping stops into cuts of of square areas in Madison, we provide a fix to the issue mentioned previously. The trends observed in this plot follow the patterns that were seen in previous plots. It can be observed that the UW campus area of Madison consists of the majority of transit ridership. On the other hand, it is worth mentioning that many parts of Madison away from the campus area average less than 4 riders on a typical weekday. 
 
 
 
@@ -67,7 +67,7 @@ This plot shows the sum of the daily ridership of all the stops in each square a
 <br/><br/><br/>
 <div align="left">
 
-In this plot, for each square area, its color (value) shows how many other unique square areas can be accessed without transferring. Squares around the UW Campus area can access almost every other square in Madison. However, as evident in the plot, some areas of Madison have very low accessibility if no transfers are made. To get a better idea of the the coverage in certain areas of Madison, we also need to look at the accessibility with one transfer.
+In this plot, for each square area, its color (value) shows the percentage of unique square areas that can be accessed with that square as a starting point without transferring buses. The majority of squares around the UW Campus area can access almost every other square in Madison. However, as evident in the plot, some areas of Madison have very low accessibility if no transfers are made. To get a better idea of the the coverage in certain areas of Madison, we also need to look at the accessibility with one transfer.
 
 
 # OCT20 START
