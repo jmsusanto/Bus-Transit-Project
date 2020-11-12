@@ -97,5 +97,14 @@ A supply-side output concept measures the amount of service that is made availab
 ## Area Coverage at Different Time of Day
 <p align="center">
 <img src = "https://github.com/jmsusanto/Bus-Transit-Project/blob/master/simulator_plots/Area_Time_of_Day.png" width="1500" align="center"/> </p>
-<div align="center"> <strong> Figure 9: Vehicle Route Miles Over Time</strong>
+<div align="center"> <strong> Figure 10: Area Coverage at Different Time of Day in Madison</strong>
 <br/><br/><br/>
+  
+ <strong> Figure 10 </strong> shows the the trend of total possible area covered in 30 minutes depending on the starting time of day. The starting stop is within the UW Campus, which is approximately at the center of Madison. As can be seen in the figure, there is a noticable peak in the morning between 6:30 and 8:30 AM as well as at around 5:30 PM. Similar to the trend of route frequency over a typical weekday, this is likely due to the City of Madison increasing their level of bus service around these times to accomodate for people going to work and going back from work. There is also an unexpected drop at exactly 6:00 AM and 5:00 PM. This is possibly due to the fact they may have just missed a bus by a few minutes, therefore wasting some of the 30 minutes on simply waiting at the bus stop. Below shows some visual representation of what the simulator is doing.
+ 
+ <p align="center">
+<img src = "https://github.com/jmsusanto/Bus-Transit-Project/blob/master/simulator_plots/Area_17:30.png" width="1500" align="center"/> </p>
+<div align="center"> <strong> Figure 11: Peak At 17:30</strong>
+<br/><br/><br/>
+  
+
