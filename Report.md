@@ -96,6 +96,6 @@ A supply-side output concept measures the amount of service that is made availab
 
 ## Area Coverage at Different Time of Day
 <p align="center">
-<img src = "simulator_plots/Area_Time_Of_Day" width="600" align="center"/> </p>
+<img src = "simulator_plots/Area_Time_Of_Day.png" width="600" align="center"/> </p>
 <div align="center"> <strong> Figure 9: Vehicle Route Miles Over Time</strong>
 <br/><br/><br/>
