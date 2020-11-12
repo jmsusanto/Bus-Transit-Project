@@ -113,7 +113,8 @@ A supply-side output concept measures the amount of service that is made availab
 <img src = "https://github.com/jmsusanto/Bus-Transit-Project/blob/master/simulator_plots/Area_6:00.png" width="2000" align="center"/> </p>
 <div align="center"> <strong> Figure 12: Low At 6:00</strong>
 <br/><br/><br/>
-  
+
+<div align="left">
  
 ## Comparison To Megan's Plots
 ### Starting From Campus Area
@@ -122,6 +123,8 @@ A supply-side output concept measures the amount of service that is made availab
 <div align="center"> <strong> Figure 13: Area Coverage in 30 Minutes Starting at X</strong>
 <br/><br/><br/>
 
+<div align="left">
+  
 ### Starting from Low-Service Areas as Discovered by Megan
 <p align="center">
 <img src = "https://github.com/jmsusanto/Bus-Transit-Project/blob/master/simulator_plots/comparison_bad_1.png" width="2000" align="center"/> </p>
@@ -133,7 +136,7 @@ A supply-side output concept measures the amount of service that is made availab
 <div align="center"> <strong> Figure 15: Area Coverage in 30 Minutes Starting at X</strong>
 <br/><br/><br/>
   
-  <p align="center">
+ <p align="center">
 <img src = "https://github.com/jmsusanto/Bus-Transit-Project/blob/master/simulator_plots/comparison_bad_3.png" width="2000" align="center"/> </p>
 <div align="center"> <strong> Figure 16: Area Coverage in 30 Minutes Starting at X</strong>
 <br/><br/><br/>
