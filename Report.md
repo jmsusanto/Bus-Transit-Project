@@ -140,13 +140,14 @@ A supply-side output concept measures the amount of service that is made availab
 <img src = "https://github.com/jmsusanto/Bus-Transit-Project/blob/master/simulator_plots/comparison_bad_3.png" width="2000" align="center"/> </p>
 <div align="center"> <strong> Figure 16: Area Coverage in 30 Minutes Starting at X</strong>
 <br/><br/><br/>
-
+<div align="left">
 
 ### Best and Worst Starting Pts
 
 Here, we simulated over every possible starting stop starting at 12:00 noon with 30 minutes of elapsed time. For each simulation, we calculated the total area covered using the sim and the results can be seen below. 
 
 <p align="center">
-<img src = "https://github.com/jmsusanto/Bus-Transit-Project/blob/master/simulator/BestandWorstArea.png" width="2000" align="center"/> </p>
+<img src = "https://github.com/jmsusanto/Bus-Transit-Project/blob/master/simulator_plots/Area_Time_of_Day.png" width="2000" align="center"/> </p>
 <div align="center"> <strong> Figure 16: Area Coverage in 30 Minutes Starting at X</strong>
-<br/><br/><br/>
+<br/><br/><br/> <div align="left">
+
