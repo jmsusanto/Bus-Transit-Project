@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>
+        Final Report - HackMD
+    </title>
+    <link rel="icon" type="image/png" href="https://hackmd.io/favicon.png">
+    <link rel="apple-touch-icon" href="https://hackmd.io/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" integrity="sha256-3iu9jgsy9TpTwXKb7bNQzqWekRX7pPK+2OLj3R922fo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css" integrity="sha256-QiWfLIsCT02Sdwkogf6YMiQlj4NE84MKkzEMkZnMGdg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css" integrity="sha256-vtR0hSWRc3Tb26iuN2oZHt3KRUomwTufNIf5/4oeCyg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/css/basic/emojify.min.css" integrity="sha256-UOrvMOsSDSrW6szVLe8ZDZezBxh5IoIfgTwdNDgTjiU=" crossorigin="anonymous" />
+    <style>
+        @charset "UTF-8";@import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i|Source+Code+Pro:300,400,500|Source+Sans+Pro:300,300i,400,400i,600,600i|Source+Serif+Pro&subset=latin-ext);.hljs{display:block;background:#fff;padding:.5em;color:#333;overflow-x:auto}.hljs-comment,.hljs-meta{color:#969896}.hljs-emphasis,.hljs-quote,.hljs-string,.hljs-strong,.hljs-template-variable,.hljs-variable{color:#df5000}.hljs-keyword,.hljs-selector-tag,.hljs-type{color:#a71d5d}.hljs-attribute,.hljs-bullet,.hljs-literal,.hljs-number,.hljs-symbol{color:#0086b3}.hljs-built_in,.hljs-builtin-name{color:#005cc5}.hljs-name,.hljs-section{color:#63a35c}.hljs-tag{color:#333}.hljs-attr,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-selector-pseudo,.hljs-title{color:#795da3}.hljs-addition{color:#55a532;background-color:#eaffea}.hljs-deletion{color:#bd2c00;background-color:#ffecec}.hljs-link{text-decoration:underline}.markdown-body{font-size:16px;line-height:1.5;word-wrap:break-word}.markdown-body:after,.markdown-body:before{display:table;content:""}.markdown-body:after{clear:both}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body .absent{color:#c00}.markdown-body .anchor{float:left;padding-right:4px;margin-left:-20px;line-height:1}.markdown-body .anchor:focus{outline:none}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-top:0;margin-bottom:16px}.markdown-body hr{height:.25em;padding:0;margin:24px 0;background-color:#e7e7e7;border:0}.markdown-body blockquote{font-size:16px;padding:0 1em;color:#777;border-left:.25em solid #ddd}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body kbd,.popover kbd{display:inline-block;padding:3px 5px;font-size:11px;line-height:10px;color:#555;vertical-align:middle;background-color:#fcfcfc;border:1px solid #ccc;border-bottom-color:#bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb}.markdown-body .loweralpha{list-style-type:lower-alpha}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{color:#000;vertical-align:middle;visibility:hidden}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{text-decoration:none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{visibility:visible}.markdown-body h1 code,.markdown-body h1 tt,.markdown-body h2 code,.markdown-body h2 tt,.markdown-body h3 code,.markdown-body h3 tt,.markdown-body h4 code,.markdown-body h4 tt,.markdown-body h5 code,.markdown-body h5 tt,.markdown-body h6 code,.markdown-body h6 tt{font-size:inherit}.markdown-body h1{font-size:2em}.markdown-body h1,.markdown-body h2{padding-bottom:.3em;border-bottom:1px solid #eee}.markdown-body h2{font-size:1.5em}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{font-size:.85em;color:#777}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol.no-list,.markdown-body ul.no-list{padding:0;list-style-type:none}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-top:0;margin-bottom:0}.markdown-body li>p{margin-top:16px}.markdown-body li+li{padding-top:.25em}.markdown-body dl{padding:0}.markdown-body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}.markdown-body dl dd{padding:0 16px;margin-bottom:16px}.markdown-body table{display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}.markdown-body table th{font-weight:700}.markdown-body table td,.markdown-body table th{padding:6px 13px;border:1px solid #ddd}.markdown-body table tr{background-color:#fff;border-top:1px solid #ccc}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{max-width:100%;box-sizing:content-box;background-color:#fff}.markdown-body img[align=right]{padding-left:20px}.markdown-body img[align=left]{padding-right:20px}.markdown-body .emoji{max-width:none;vertical-align:text-top;background-color:transparent}.markdown-body span.frame{display:block;overflow:hidden}.markdown-body span.frame>span{display:block;float:left;width:auto;padding:7px;margin:13px 0 0;overflow:hidden;border:1px solid #ddd}.markdown-body span.frame span img{display:block;float:left}.markdown-body span.frame span span{display:block;padding:5px 0 0;clear:both;color:#333}.markdown-body span.align-center{display:block;overflow:hidden;clear:both}.markdown-body span.align-center>span{display:block;margin:13px auto 0;overflow:hidden;text-align:center}.markdown-body span.align-center span img{margin:0 auto;text-align:center}.markdown-body span.align-right{display:block;overflow:hidden;clear:both}.markdown-body span.align-right>span{display:block;margin:13px 0 0;overflow:hidden;text-align:right}.markdown-body span.align-right span img{margin:0;text-align:right}.markdown-body span.float-left{display:block;float:left;margin-right:13px;overflow:hidden}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{display:block;float:right;margin-left:13px;overflow:hidden}.markdown-body span.float-right>span{display:block;margin:13px auto 0;overflow:hidden;text-align:right}.markdown-body code,.markdown-body tt{padding:0;padding-top:.2em;padding-bottom:.2em;margin:0;font-size:85%;background-color:rgba(0,0,0,.04);border-radius:3px}.markdown-body code:after,.markdown-body code:before,.markdown-body tt:after,.markdown-body tt:before{letter-spacing:-.2em;content:"\00a0"}.markdown-body code br,.markdown-body tt br{display:none}.markdown-body del code{text-decoration:inherit}.markdown-body pre{word-wrap:normal}.markdown-body pre>code{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:transparent;border:0}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{padding:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f7f7f7;border-radius:3px}.markdown-body pre code,.markdown-body pre tt{display:inline;max-width:auto;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}.markdown-body pre code:after,.markdown-body pre code:before,.markdown-body pre tt:after,.markdown-body pre tt:before{content:normal}.markdown-body .csv-data td,.markdown-body .csv-data th{padding:5px;overflow:hidden;font-size:12px;line-height:1;text-align:left;white-space:nowrap}.markdown-body .csv-data .blob-line-num{padding:10px 8px 9px;text-align:right;background:#fff;border:0}.markdown-body .csv-data tr{border-top:0}.markdown-body .csv-data th{font-weight:700;background:#f8f8f8;border-top:0}.news .alert .markdown-body blockquote{padding:0 0 0 40px;border:0 none}.activity-tab .news .alert .commits,.activity-tab .news .markdown-body blockquote{padding-left:0}.task-list-item{list-style-type:none}.task-list-item label{font-weight:400}.task-list-item.enabled label{cursor:pointer}.task-list-item+.task-list-item{margin-top:3px}.task-list-item-checkbox{float:left;margin:.31em 0 .2em -1.3em!important;vertical-align:middle;cursor:default!important}.markdown-body{padding-top:40px;padding-bottom:40px;max-width:758px;overflow:visible!important;position:relative}.markdown-body .emoji{vertical-align:top}.markdown-body pre{border:inherit!important}.markdown-body code{color:inherit!important}.markdown-body pre code .wrapper{display:-moz-inline-flex;display:-ms-inline-flex;display:-o-inline-flex;display:inline-flex}.markdown-body pre code .gutter{float:left;overflow:hidden;-webkit-user-select:none;user-select:none}.markdown-body pre code .gutter.linenumber{text-align:right;position:relative;display:inline-block;cursor:default;z-index:4;padding:0 8px 0 0;min-width:20px;box-sizing:content-box;color:#afafaf!important;border-right:3px solid #6ce26c!important}.markdown-body pre code .gutter.linenumber>span:before{content:attr(data-linenumber)}.markdown-body pre code .code{float:left;margin:0 0 0 16px}.markdown-body .gist .line-numbers{border-left:none;border-top:none;border-bottom:none}.markdown-body .gist .line-data{border:none}.markdown-body .gist table{border-spacing:0;border-collapse:inherit!important}.markdown-body code[data-gist-id]{background:none;padding:0}.markdown-body code[data-gist-id]:after,.markdown-body code[data-gist-id]:before{content:""}.markdown-body code[data-gist-id] .blob-num{border:unset}.markdown-body code[data-gist-id] table{overflow:unset;margin-bottom:unset}.markdown-body code[data-gist-id] table tr{background:unset}.markdown-body[dir=rtl] pre{direction:ltr}.markdown-body[dir=rtl] code{direction:ltr;unicode-bidi:embed}.markdown-body .alert>p{margin-bottom:0}.markdown-body pre.abc,.markdown-body pre.flow-chart,.markdown-body pre.graphviz,.markdown-body pre.mermaid,.markdown-body pre.sequence-diagram,.markdown-body pre.vega{text-align:center;background-color:inherit;border-radius:0;white-space:inherit;overflow:visible}.markdown-body pre.abc>code,.markdown-body pre.flow-chart>code,.markdown-body pre.graphviz>code,.markdown-body pre.mermaid>code,.markdown-body pre.sequence-diagram>code,.markdown-body pre.vega>code{text-align:left}.markdown-body pre.abc>svg,.markdown-body pre.flow-chart>svg,.markdown-body pre.graphviz>svg,.markdown-body pre.mermaid>svg,.markdown-body pre.sequence-diagram>svg,.markdown-body pre.vega>svg{max-width:100%;height:100%}.markdown-body pre>code.wrap{white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word}.markdown-body .alert>p,.markdown-body .alert>ul{margin-bottom:0}.markdown-body summary{display:list-item}.markdown-body summary:focus{outline:none}.markdown-body details summary{cursor:pointer}.markdown-body details:not([open])>:not(summary){display:none}.markdown-body figure{margin:1em 40px}.markdown-body .mark,.markdown-body mark{background-color:#fff1a7}.vimeo,.youtube{cursor:pointer;display:table;text-align:center;background-position:50%;background-repeat:no-repeat;background-size:contain;background-color:#000;overflow:hidden}.vimeo,.youtube{position:relative;width:100%}.youtube{padding-bottom:56.25%}.vimeo img{width:100%;object-fit:contain;z-index:0}.youtube img{object-fit:cover;z-index:0}.vimeo iframe,.youtube iframe,.youtube img{width:100%;height:100%;position:absolute;top:0;left:0}.vimeo iframe,.youtube iframe{vertical-align:middle;z-index:1}.vimeo .icon,.youtube .icon{position:absolute;height:auto;width:auto;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;opacity:.3;transition:opacity .2s;z-index:0}.vimeo:hover .icon,.youtube:hover .icon{opacity:.6;transition:opacity .2s}.slideshare .inner,.speakerdeck .inner{position:relative;width:100%}.slideshare .inner iframe,.speakerdeck .inner iframe{position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:100%}.MJX_Assistive_MathML{display:none}#MathJax_Message{z-index:1000!important}.ui-infobar{position:relative;z-index:2;max-width:760px;margin:25px auto -25px;color:#777}.toc .invisable-node{list-style-type:none}.ui-toc{position:fixed;bottom:20px;z-index:998}.ui-toc.both-mode{margin-left:8px}.ui-toc.both-mode .ui-toc-label{height:40px;padding:10px 4px;border-top-left-radius:0;border-bottom-left-radius:0}.ui-toc-label{background-color:#e6e6e6;border:none;color:#868686;transition:opacity .2s}.ui-toc .open .ui-toc-label{opacity:1;color:#fff;transition:opacity .2s}.ui-toc-label:focus{opacity:.3;background-color:#ccc;color:#000}.ui-toc-label:hover{opacity:1;background-color:#ccc;transition:opacity .2s}.ui-toc-dropdown{margin-top:20px;margin-bottom:20px;padding-left:10px;padding-right:10px;max-width:45vw;width:25vw;max-height:70vh;overflow:auto;text-align:inherit}.ui-toc-dropdown>.toc{max-height:calc(70vh - 100px);overflow:auto}.ui-toc-dropdown[dir=rtl] .nav{padding-right:0;letter-spacing:.0029em}.ui-toc-dropdown a{overflow:hidden;text-overflow:ellipsis;white-space:pre}.ui-toc-dropdown .nav>li>a{display:block;padding:4px 20px;font-size:13px;font-weight:500;color:#767676}.ui-toc-dropdown .nav>li:first-child:last-child > ul,.ui-toc-dropdown .toc.expand ul{display:block}.ui-toc-dropdown .nav>li>a:focus,.ui-toc-dropdown .nav>li>a:hover{padding-left:19px;color:#000;text-decoration:none;background-color:transparent;border-left:1px solid #000}.ui-toc-dropdown[dir=rtl] .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav>li>a:hover{padding-right:19px;border-left:none;border-right:1px solid #000}.ui-toc-dropdown .nav>.active:focus>a,.ui-toc-dropdown .nav>.active:hover>a,.ui-toc-dropdown .nav>.active>a{padding-left:18px;font-weight:700;color:#000;background-color:transparent;border-left:2px solid #000}.ui-toc-dropdown[dir=rtl] .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav>.active>a{padding-right:18px;border-left:none;border-right:2px solid #000}.ui-toc-dropdown .nav .nav{display:none;padding-bottom:10px}.ui-toc-dropdown .nav>.active>ul{display:block}.ui-toc-dropdown .nav .nav>li>a{padding-top:1px;padding-bottom:1px;padding-left:30px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a{padding-right:30px}.ui-toc-dropdown .nav .nav>li>ul>li>a{padding-top:1px;padding-bottom:1px;padding-left:40px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a{padding-right:40px}.ui-toc-dropdown .nav .nav>li>a:focus,.ui-toc-dropdown .nav .nav>li>a:hover{padding-left:29px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:hover{padding-right:29px}.ui-toc-dropdown .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown .nav .nav>li>ul>li>a:hover{padding-left:39px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:hover{padding-right:39px}.ui-toc-dropdown .nav .nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>a{padding-left:28px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>a{padding-right:28px}.ui-toc-dropdown .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active>a{padding-left:38px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active>a{padding-right:38px}.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif}html[lang^=ja] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html[lang=zh-tw] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}html .markdown-body[lang^=ja]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html .markdown-body[lang=zh-tw]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html .markdown-body[lang=zh-cn]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}html[lang^=ja] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ\ Ｐゴシック,sans-serif}html[lang=zh-tw] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}html[lang=zh-cn] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}html .ui-toc-dropdown[lang^=ja]{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ\ Ｐゴシック,sans-serif}html .ui-toc-dropdown[lang=zh-tw]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}html .ui-toc-dropdown[lang=zh-cn]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}.ui-affix-toc{position:fixed;top:0;max-width:15vw;max-height:70vh;overflow:auto}.back-to-top,.expand-toggle,.go-to-bottom{display:block;padding:4px 10px;margin-top:10px;margin-left:10px;font-size:12px;font-weight:500;color:#999}.back-to-top:focus,.back-to-top:hover,.expand-toggle:focus,.expand-toggle:hover,.go-to-bottom:focus,.go-to-bottom:hover{color:#563d7c;text-decoration:none}.back-to-top,.go-to-bottom{margin-top:0}.ui-user-icon{width:20px;height:20px;display:block;border-radius:50%;margin-top:2px;margin-bottom:2px;margin-right:5px;background-position:50%;background-repeat:no-repeat;background-size:cover}.ui-user-icon.small{width:18px;height:18px;display:inline-block;vertical-align:middle;margin:0 0 .2em}.ui-infobar>small>span{line-height:22px}.ui-infobar>small .dropdown{display:inline-block}.ui-infobar>small .dropdown a:focus,.ui-infobar>small .dropdown a:hover{text-decoration:none}.ui-more-info{color:#888;cursor:pointer;vertical-align:middle}.ui-more-info .fa{font-size:16px}.ui-connectedGithub,.ui-published-note{color:#888}.ui-connectedGithub{line-height:23px;white-space:nowrap}.ui-connectedGithub a.file-path{color:#888;text-decoration:none;padding-left:22px}.ui-connectedGithub a.file-path:active,.ui-connectedGithub a.file-path:hover{color:#888;text-decoration:underline}.ui-connectedGithub .fa{font-size:20px}.ui-published-note .fa{font-size:20px;vertical-align:top}.unselectable{-webkit-user-select:none;-o-user-select:none;user-select:none}.selectable{-webkit-user-select:text;-o-user-select:text;user-select:text}@media print{blockquote,div,img,pre,table{page-break-inside:avoid!important}a[href]:after{font-size:12px!important}}.markdown-body.slides{position:relative;z-index:1;color:#222}.markdown-body.slides:before{content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;background-color:currentColor;box-shadow:0 0 0 50vw}.markdown-body.slides section[data-markdown]{position:relative;margin-bottom:1.5em;background-color:#fff;text-align:center}.markdown-body.slides section[data-markdown] code{text-align:left}.markdown-body.slides section[data-markdown]:before{content:"";display:block;padding-bottom:56.23%}.markdown-body.slides section[data-markdown]>div:first-child{position:absolute;top:50%;left:1em;right:1em;transform:translateY(-50%);max-height:100%;overflow:hidden}.markdown-body.slides section[data-markdown]>ul{display:inline-block}.markdown-body.slides>section>section+section:after{content:"";position:absolute;top:-1.5em;right:1em;height:1.5em;border:3px solid #777}.site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,sans-serif}html[lang^=ja] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html[lang=zh-tw] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}body{font-smoothing:subpixel-antialiased!important;-webkit-font-smoothing:subpixel-antialiased!important;-moz-osx-font-smoothing:auto!important;text-shadow:0 0 1em transparent,1px 1px 1.2px rgba(0,0,0,.004);-webkit-overflow-scrolling:touch;letter-spacing:.025em;font-family:Source Sans Pro,Helvetica,Arial,sans-serif}html[lang^=ja] body{font-family:Source Sans Pro,Helvetica,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html[lang=zh-tw] body{font-family:Source Sans Pro,Helvetica,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] body{font-family:Source Sans Pro,Helvetica,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}abbr[data-original-title],abbr[title]{cursor:help}body.modal-open{overflow-y:auto;padding-right:0!important}
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js" integrity="sha256-8E4Is26QH0bD52WoQpcB+R/tcWQtpzlCojrybUd7Mxo=" crossorigin="anonymous"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="doc" class="markdown-body container-fluid comment-inner comment-enabled" data-hard-breaks="true"><h1 id="Final-Report" data-id="Final-Report"><a class="anchor hidden-xs" href="#Final-Report" title="Final-Report"><span class="octicon octicon-link"></span></a><span>Final Report</span></h1><h1 id="Madison-Metro-Accessibility-Analysis" data-id="Madison-Metro-Accessibility-Analysis"><a class="anchor hidden-xs" href="#Madison-Metro-Accessibility-Analysis" title="Madison-Metro-Accessibility-Analysis"><span class="octicon octicon-link"></span></a><span>Madison Metro Accessibility Analysis</span></h1><p><span>Andy Lin </span><a href="mailto:lin383@wisc.edu" target="_blank" rel="noopener"><span>lin383@wisc.edu</span></a><br>
+<span>Jeremy Michael </span><a href="mailto:jmsusanto@wisc.edu" target="_blank" rel="noopener"><span>jmsusanto@wisc.edu</span></a><br>
+<span>Ray Hsieh </span><a href="mailto:yhsieh36@wisc.edu" target="_blank" rel="noopener"><span>yhsieh36@wisc.edu</span></a><br>
+<span>Chang Xu </span><a href="mailto:cxu249@wisc.edu" target="_blank" rel="noopener"><span>cxu249@wisc.edu</span></a></p><h2 id="Motivation" data-id="Motivation"><a class="anchor hidden-xs" href="#Motivation" title="Motivation"><span class="octicon octicon-link"></span></a><span>Motivation:</span></h2><p><span>There are many routes in the City of Madison. Because of this, the metro transit system will be complex; with such complexity, it is possible for some routes to be redundant, and some area may be underserved.</span></p><p><span>Therefore, we aim to identify the areas with over-provided metro service while improving the accessbility of the underserved areas.</span></p><h1 id="Introduction-to-Madison-Metro-Transit" data-id="Introduction-to-Madison-Metro-Transit"><a class="anchor hidden-xs" href="#Introduction-to-Madison-Metro-Transit" title="Introduction-to-Madison-Metro-Transit"><span class="octicon octicon-link"></span></a><span>Introduction to Madison Metro Transit</span></h1><center><img src="https://i.imgur.com/xrnY5I7.png" width="550"></center><br><center><strong>Figure: Route Network In Madison</strong></center><br><p><span>In Madison, the route network focuses on hubs at the Capitol Square in downtown Madison and four major transfer points in outer parts of Madison.</span></p><h3 id="How-Does-Madison-Metro-Transit-Do-Comparing-With-Wisconsin-State-and-The-US" data-id="How-Does-Madison-Metro-Transit-Do-Comparing-With-Wisconsin-State-and-The-US"><a class="anchor hidden-xs" href="#How-Does-Madison-Metro-Transit-Do-Comparing-With-Wisconsin-State-and-The-US" title="How-Does-Madison-Metro-Transit-Do-Comparing-With-Wisconsin-State-and-The-US"><span class="octicon octicon-link"></span></a><span>How Does Madison Metro Transit Do, Comparing With Wisconsin State and The U.S.?</span></h3><center><img src="https://i.imgur.com/B78aSi3.png" width="750"></center><br><p><span>From the left plot, we observe that Madison Metro Transit has a higher volume of ridership (more specific term, unlinked passenger trips) than the average of WI as well as that of the US. This makes sense because Madison is the second largest city as well as one of the busiest city in Wisconsin State.</span></p><p><span>Ridership in Madison also fluctuates more than others because school seasons affect the number of boardings. In WI overall, ridership is 6.7% lower in July than in January on average; whereas in Madison, ridership is </span><strong><span>26.4%</span></strong><span> lower.</span></p><p><span>On January 30th, 2020 was when WHO informed the world about the outbreak, and March 11th was when quarantine started. These two factors both contributed to the decreasing trend.</span></p><p><span>The number of ridership in Madison reached a peak of 1,278,838 in February; nonetheless, dropped drastically to a troughs of 110,054 in April. COVID-19 has especially affected Madison ridership;</span><br>
+<span>WI and US have seen 69.56% and 69.51% declines from February through April respectively; however, Madison itself has seen a </span><strong><span>91.39%</span></strong><span> decline.</span></p><h2 id="Accessibility-to-Metro-Transit-in-terms-of-Land-Use" data-id="Accessibility-to-Metro-Transit-in-terms-of-Land-Use"><a class="anchor hidden-xs" href="#Accessibility-to-Metro-Transit-in-terms-of-Land-Use" title="Accessibility-to-Metro-Transit-in-terms-of-Land-Use"><span class="octicon octicon-link"></span></a><span>Accessibility to Metro Transit in terms of Land Use</span></h2><center><img src="https://i.imgur.com/Mdc2jrb.jpg" width="550"></center><p><span>According to </span><a href="https://data-cityofmadison.opendata.arcgis.com/datasets/zoning-districts" target="_blank" rel="noopener"><span>city of Madison open data</span></a><span>, The city of Madison is categorized into 5 </span><em><span>zoning districts</span></em><span>, that are, Residential districts, Commercial and Mixed-Use districts, Employment districts, Downtown and Urban districts, and Special districts. Each </span><em><span>zone</span></em><span> is an area that has a set of regulations and differs from other zones.</span></p><p><span>For more details of each </span><em><span>zoning districts</span></em><span>, </span><a href="https://www.cityofmadison.com/assessor/documents/ZoningDistricts.pdf" target="_blank" rel="noopener"><span>click me</span></a><span>.</span></p><h3 id="Which-District-Has-Higher-Accessibility-To-Metro-Transit-with-respect-to-Distance" data-id="Which-District-Has-Higher-Accessibility-To-Metro-Transit-with-respect-to-Distance"><a class="anchor hidden-xs" href="#Which-District-Has-Higher-Accessibility-To-Metro-Transit-with-respect-to-Distance" title="Which-District-Has-Higher-Accessibility-To-Metro-Transit-with-respect-to-Distance"><span class="octicon octicon-link"></span></a><span>Which District Has Higher Accessibility To Metro Transit with respect to Distance?</span></h3><center><img src="https://i.imgur.com/fTi0b9A.jpg" width="800"></center><p><span>The plot on the </span><strong><span>left</span></strong><span> shows the averages of distance to the </span><em><span>nearest</span></em><span> bus stop. It’s clear that </span><em><span>Downtown and Urban</span></em><span> and </span><em><span>Commercial and Mixed-Use</span></em><span> (a type of a commercial property that includes both commercial and residential space) districts have better access in terms of distance to metro transit because these are the places that people tend to visit more often. However, Residential districts, Employment districts, and Special districts (special-purpose governmental units) have the higher averages of distance to the nearest bus stop because these districts are located in a more suburban, countryside area.</span></p><p><span>The plot on the </span><strong><span>right</span></strong><span> identifies the average number of routes available within the distance of 5-minute walk (1/4 miles, 400 meters) for each randomly generated rider. </span><em><span>Downtown and Urban</span></em><span> districts is one of the major transfer points and many buses travel through, thus, more accessibility to more routes within the range. Whereas other districts have an average of 2 to 4 options to routes that one can take.</span></p><h3 id="Which-District-Has-Higher-Accessibility-to-Metro-Transit-in-terms-of-Time-Spent" data-id="Which-District-Has-Higher-Accessibility-to-Metro-Transit-in-terms-of-Time-Spent"><a class="anchor hidden-xs" href="#Which-District-Has-Higher-Accessibility-to-Metro-Transit-in-terms-of-Time-Spent" title="Which-District-Has-Higher-Accessibility-to-Metro-Transit-in-terms-of-Time-Spent"><span class="octicon octicon-link"></span></a><span>Which District Has Higher Accessibility to Metro Transit in terms of Time Spent?</span></h3><center><img src="https://i.imgur.com/eZECMBW.png" width="1000"></center><p><span>Above plots show the average of how fast a rider can board a bus from one of the bus stops in the distance of 5-minute walk. Observed that, on a weekday, the waiting time, seems to be similar to one another except for the Commercial and Mixed-Use district that has slightly less waiting time, if not taking downtown districts into account.</span></p><p><span>Note that the cause of the increasing waiting time on Weekday is that there are stops at the outskirts of Madison that only belong to certain routes that run exclusively on weekends, or in the afternoon-evening time.</span></p><p><span>Surprisingly, the average waiting time during rush and off-rush hours throughout the week does not vary much. Thus we could conclude that residents in the City of Madison enjoy very high level of service.</span></p><h4 id="Simplified-Assumptions" data-id="Simplified-Assumptions"><a class="anchor hidden-xs" href="#Simplified-Assumptions" title="Simplified-Assumptions"><span class="octicon octicon-link"></span></a><span>Simplified Assumptions:</span></h4><ul>
+<li><span>Riders can walk diagonal to bus stops.</span></li>
+<li><span>Do not take the time required for walking to the bus stop into account.</span></li>
+<li><span>Data are based on the year 2020, thus some suspended routes not shown (due to COVID-19).</span></li>
+</ul><h1 id="Measures-of-Productivity-in-the-Transit-Industry" data-id="Measures-of-Productivity-in-the-Transit-Industry"><a class="anchor hidden-xs" href="#Measures-of-Productivity-in-the-Transit-Industry" title="Measures-of-Productivity-in-the-Transit-Industry"><span class="octicon octicon-link"></span></a><span>Measures of Productivity in the Transit Industry</span></h1><h2 id="How-productive-is-Madison’s-Metro-Transit-System" data-id="How-productive-is-Madison’s-Metro-Transit-System"><a class="anchor hidden-xs" href="#How-productive-is-Madison’s-Metro-Transit-System" title="How-productive-is-Madison’s-Metro-Transit-System"><span class="octicon octicon-link"></span></a><span>How productive is Madison’s Metro Transit System?</span></h2><p><span>The productivity of a business or a system is measured in the context of its outputs and its costs. In the private sector, the outputs can be easily defined by factors such as revenue and growth. However, in the context of the public sector, as the main motive is almost never to maximize revenue and profits, it becomes more complicated. There are two main ways to approach the output of a public transit system: A supply side and a demand side output. There are some key questions we want to answer in this section:</span></p><ol>
+<li><span>How does our level of service compare to other cities?</span></li>
+<li><span>How does our level of service vary over a day?</span></li>
+<li><span>How does our level of service vary over different parts of Madison?</span></li>
+<li><span>How does the demand for the Metro Transit vary over location?</span></li>
+<li><span>How well does Madison Metro Transit’s level of service meet their demand over time and location?</span></li>
+</ol><h2 id="Supply-Side-Outputs" data-id="Supply-Side-Outputs"><a class="anchor hidden-xs" href="#Supply-Side-Outputs" title="Supply-Side-Outputs"><span class="octicon octicon-link"></span></a><span>Supply Side Outputs</span></h2><p><span>A supply-side output concept measures the amount of service that is made available, regardless of how much is actually consumed [1]. This includes measurements of Vehicle Revenue Miles (VRM) and Vehicle Revenue Hours (VRH).  VRM is a measurement of the miles that vehicles travel while in revenue service. The measure excludes miles that vehicles travel for deadhead services (leaving or returning to the garage or yard facility, changing routes, or when there is no expectation of carrying revenue passengers), operator training, maintenance testing, and school bus and charter services [2]. VRH is similar to VRM, but is measured in time of service rather than its distance travelled.</span></p><h3 id="Vehicle-Revenue-Miles" data-id="Vehicle-Revenue-Miles"><a class="anchor hidden-xs" href="#Vehicle-Revenue-Miles" title="Vehicle-Revenue-Miles"><span class="octicon octicon-link"></span></a><span>Vehicle Revenue Miles</span></h3><center>
+<img src="https://i.imgur.com/9TAkPBN.png" width="600"></center><div> <center><strong> Figure: Vehicle Route Miles Over Past 5 Years</strong></center>
+<br><br><br>
+<div> The figure above shows the trend of Vehicle Revenue Miles over time for the city of Madison, the average city in Wisconsin, and the average city in the United States. Before early 2020, it is evident that Madison consistently has more VRM than the average city in Wisconsin and in the US. From a supply side view, we can say that Madison offers a more productive service which is made available regardless of how many riders are actually on the bus. Dividing the value of VRM by the overall budget of the bus transit system at a given time interval can account for how efficiently funds and labor are being translated into services offered. As can be seen towards the end the <strong>Figure 1</strong>, VRM starts to drop dramatically for all 3 cities. This is due to the outbreak of COVID-19, leading to bus operators around the US deciding to lower their service, likely to both reduce the spread of COVID-19 and to match the drops in demand as well. 
+<h3 id="Frequency-of-Bus-Routes" data-id="Frequency-of-Bus-Routes"><a class="anchor hidden-xs" href="#Frequency-of-Bus-Routes" title="Frequency-of-Bus-Routes"><span class="octicon octicon-link"></span></a><span>Frequency of Bus Routes</span></h3>
+<p><span>Frequency is defined as the number of bus trips in the same direction of travel within a specified time period, and is commonly expressed in trips per hour. It is not only a key measurement of the level of service of transit, but it is also relatable to the general public as it can be easily converted into average waiting time between buses.</span></p>
+<p><span>There are two types of frequency: by Route or by Stop. Firstly, we want to see how our Bus Transit service varies over a day, and we achieve by observing how route frequency changes over a typical weekday and weekend.</span></p>
+<center><img src="https://i.imgur.com/pG7sRUg.png" width="650"></center>
+<p></p>
+<center><strong>Figure: Route Frequency over a Day <br></strong></center>
+<br><br><br>
+<p><span>The figure above shows the aggregate route frequency at an hourly interval over the day for both a Weekday and Weekend. It can be observed that the Transit service starts at 4:00 AM for both weekdays and weekends. The level of service during a weekday evidently higher at every time of the day, but this is especially true from around 8:00 AM to 6:00 PM. There are also clear peaks of frequency during the weekday, at the 8:00 to 9:00 AM interval and the 4:00 to 6:00 PM interval. These are often times when people are either going to work or going back home from work. An increased demand of transit service is met with an increase in the level of service itself. This brings up the question: are there any other intervals of time during the day in which high demand is met with low levels of service, or vice-versa? This could be an area of focus in the future, but it will be rather difficult to achieve without hourly ridership data (an indicator of transit demand).</span></p>
+<p><span>Next, we want to see how our Transit service is spread over the different areas in Madison.</span></p>
+<h3 id="Frequency-of-Bus-Stops" data-id="Frequency-of-Bus-Stops"><a class="anchor hidden-xs" href="#Frequency-of-Bus-Stops" title="Frequency-of-Bus-Stops"><span class="octicon octicon-link"></span></a><span>Frequency of Bus Stops</span></h3>
+<p>
+<img src="https://i.imgur.com/QfZNsWv.png" width="8000">
+</p><center> <strong> Figure: Average Stop Frequency By Square Region (Visits Per Hour) <br></strong></center>
+<center>(Boxes = 0.25 miles or 5 minutes walking)</center>
+<br><br><br>
+<p><span>The figure above shows the average stop frequency across each square region, where each square represents a 0.25 X 0.25 mile square area, or 5 minutes walking from one corner to adjacent corners. Since this is the average stop frequency, we have already accounted for the number of stops in each square area. We can see that UW Campus area generally have stops with higher frequency at over 5 trips an hour. There are other notable areas such as East Towne Mall and West Town Mall and the Dane County Airport which has a notably higher frequency especially compared to its adjacent squares.</span></p>
+<p><span>From a supply side output, we were able to evaluate our transit service relative to other bus transit services and also get an idea of the level of service we provide over a day. However, it is just as important to consider demand side factors, and we achieve this with ridership data. This is important because we want to analyze all the stops as well as the time of day and observe whether there is high demand is met with low levels of service, or vice-versa.</span></p>
+<img src="https://i.imgur.com/Ot7toUP.png" width="8000">
+<p></p>
+<center><strong>Figure: Daily Ridership by Square Region <br></strong></center>
+<center>(Boxes = 0.25 miles or 5 minutes walking)</center>
+<br><br>
+<p><span>The figure above shows the daily ridership values in each square region. In each square, the daily ridership of each stop inside the area is added to arrive at this value. Note that the colorbar on the right is shown on an exponential scale. From this figure, we observe that every square region away from the Madison Campus Area has relatively even ridership values, at least relative to the square areas in the Madison Campus area. In the central area, many of the squares show the ridership value of over 500 passengers on a typical weekday. It is worth noting that the three highest frequency </span><strong><span> routes </span></strong><span>, which are the 80, 2 and 6, all have stops on those high ridership areas.</span></p>
+<img src="https://i.imgur.com/qjyHEFJ.png" width="8000">
+<p></p>
+<center><strong>Figure Average Passengers Boarded per Visit by Square Region <br></strong></center>
+<center>(Boxes = 0.25 miles or 5 minutes walking)</center>
+<br><br><br>
+<p><span>Finally we combine to stop frequency and ridership to get an idea of how well our service meets its demand.</span></p>
+<p><span>The figure above takes the ratio of Daily Ridership to the total number of visits to a stop per day. The values of this ratio for each stop are then averaged across other stops within the same square area. This ratio is the equivalent of the Average Passengers Boarded each time a stop in the square area is visited. We can see that there isnt the same discrepancy that we saw in the previous two plots. However, there are still the same trends we saw where the UW Campus area generally have higher Average Passengers Boarded per Visit. It is difficult for us to make a proposal to reduce or increase certain stop frequencies as we are lacking the demand side data at an hourly level. Optimally, if we are able to get data on ridership values at an hourly level from all the stops or routes, then we would be more comfortable in proposing changes to the frequency of the current system, and these would likely be changes at a more hourly level rather than daily since the demand for transit varies over a day.</span><br>
+<br><br>
+<span>While frequency may provide insight on the level of service of the bus system, it has some inherent flaws. It indicates the number of buses that comes to a stop within some time interval, but each bus travels difference distances at different speeds. In other words, the coverage of each bus stop is not the same. Therefore, the frequency of each bus stop may also not be the most suitable metric to measure the supply side output. Instead, to compute a more useful metric, the area coverage within some time interval, we came up with a metro bus simulator.</span></p>
+<h1 id="Madison-Metro-Simulation" data-id="Madison-Metro-Simulation"><a class="anchor hidden-xs" href="#Madison-Metro-Simulation" title="Madison-Metro-Simulation"><span class="octicon octicon-link"></span></a><span>Madison Metro Simulation</span></h1>
+<h2 id="Brief-Explaination-of-Our-Simulator" data-id="Brief-Explaination-of-Our-Simulator"><a class="anchor hidden-xs" href="#Brief-Explaination-of-Our-Simulator" title="Brief-Explaination-of-Our-Simulator"><span class="octicon octicon-link"></span></a><span>Brief Explaination of Our Simulator</span></h2>
+<p><span>To get a realistic result, we find that creating a simulator will be a convenient and the easiet way to get various metrics for assisting our analysis, since it simulates what people actually will do.</span></p>
+<p><span>By creating that, we can also interpolate the simulation result with the population data to know which area is well-serviced and under-serviced. The residents of an area may be well-serviced if taking the buses will not bring too much inconveniences to them, vice versa.</span></p>
+<h3 id="Processing-Steps-of-the-Simulator" data-id="Processing-Steps-of-the-Simulator"><a class="anchor hidden-xs" href="#Processing-Steps-of-the-Simulator" title="Processing-Steps-of-the-Simulator"><span class="octicon octicon-link"></span></a><span>Processing Steps of the Simulator</span></h3>
+<p><span>First, the simulator takes in parameters such as starting time, the plan of the stops, etc, to generate a graph, representing the possible trips within a certain time frame.</span></p>
+<p><span>Then, a graph will be generated. The nodes represent the static events at a moment, such as a bus arrives at some stop; the edges represent the dynamic events between stops. These dynamic events can be either walking or taking the buses.</span></p>
+<p><span>After the graph generation, the possible paths will be returned and ready for the further analysis.</span></p>
+<h3 id="Performance-of-the-Simulator" data-id="Performance-of-the-Simulator"><a class="anchor hidden-xs" href="#Performance-of-the-Simulator" title="Performance-of-the-Simulator"><span class="octicon octicon-link"></span></a><span>Performance of the Simulator</span></h3>
+<center><img src="https://i.imgur.com/LkVdlXP.png" width="400"></center>
+<p><span>Here’s the overview of the simulator.</span></p>
+<p><span>As we can see, the data loading time is almost a constant, which makes sense, since the data size will not change.</span></p>
+<p><span>The graph generation time is slightly close to exponential, since the possibilities grows exponentially according to the simulation time i.e. the trip time simulated.</span></p>
+<p><span>The optimizations were done mostly during the graph generation.</span></p>
+<p><span>There are a few optimizations we have done. The most significant one we have done is to implement a pruning algorithm. If we found a detouring path or a cyclic path, we prune it.</span></p>
+<p><span>This saves us ~5000x performance (will be different by adjusting the pruning policy), because this cut off many possible non-sense paths and prevent them from generating more possibilities, such as a person going circle 3 times to reach their destination.</span></p>
+<h2 id="Area-Coverage-for-Different-Times-of-Day" data-id="Area-Coverage-for-Different-Times-of-Day"><a class="anchor hidden-xs" href="#Area-Coverage-for-Different-Times-of-Day" title="Area-Coverage-for-Different-Times-of-Day"><span class="octicon octicon-link"></span></a><span>Area Coverage for Different Times of Day</span></h2>
+<img src="https://i.imgur.com/VifGML2.png" width="5000">
+<p></p>
+<center><strong>Figure : Area Coverage Over a Weekday <br></strong></center>
+<br><br>
+<div>The plot above shows the trend of the possible area coverage in 40 minutes over a day. The starting stop is North Lake &amp; University, which is within the UW Campus. As can be seen in the figure, there are noticable peaks in the morning between 6:00 and 8:00 AM and also between 3:30 to 5:30 PM. These are times when people are either going to work or going back from work, so having a high level of bus service during these times is fine. The small fluctuations in the plot is due to the fact some starting times have just missed a bus by a few minutes, and therefore they spend some of the 40 minutes of simulation.just waiting at the bus stop. Starting at 10:30 at night, the area coverage drops significantly. At 11PM, the bus service is still active but the area coverage becomes very small.
+<p><br><br><br><br><br></p>
+<img src="https://i.imgur.com/UD4AVEZ.png" width="5000">
+<p></p>
+<center><strong>Figure: Area Coverage at Peak and Low Service Time  <br></strong></center>
+<br><br>
+<div> This figure gives a better visual idea of the difference in possible area coverage at a peak time and at a low. The red area shows the area coverage at 8 AM while the blue area shows the area coverage at 11 PM. Note that the starting stop for both times can be seen as an 'X' in the figure. One thing to note is that on the figure, there exists some area covered that is isolated from the main brach of area. This is due to the fact that the bus is able to take people from stop to stop but is unable to drop them off before arriving at the next stop. The possibility of walking is also taken into account for by the simulator in the form of a circular area coverage around stops that they drop off at. 
+<h2 id="Analyzing-Previous-Stops-Determined-to-be-Inefficient-From-a-prior-analysis-by-Megan-Tabutt" data-id="Analyzing-Previous-Stops-Determined-to-be-Inefficient-From-a-prior-analysis-by-Megan-Tabutt"><a class="anchor hidden-xs" href="#Analyzing-Previous-Stops-Determined-to-be-Inefficient-From-a-prior-analysis-by-Megan-Tabutt" title="Analyzing-Previous-Stops-Determined-to-be-Inefficient-From-a-prior-analysis-by-Megan-Tabutt"><span class="octicon octicon-link"></span></a><span>Analyzing Previous Stops Determined to be Inefficient (From a prior analysis by Megan Tabutt)</span></h2>
+<p><span>In the prior analysis, Megan Tabutt concluded that stops in certain areas have a low possible farthest distance travelled assuming no transfers. While this metric may be able to indicate whether a stop is efficient or inefficient, we want to observe how these stops behave in regards to their area coverage. In other words, we compare the area coverage when starting at a centralized stop and starting at at a possible inefficient stop.</span></p>
+<img src="https://i.imgur.com/Uo2Yrut.jpg" width="10000" height="">
+<p></p>
+<center><strong>Figure: Area Coverage at 12:00 Starting at Several Stops <br></strong></center>
+<br><br>
+<p><span>In this map, we can see the area covered at different starting bus stops. Each X on </span><strong><span>Figure 4</span></strong><span> once again represents a starting stop. There are 4 starting points here, where one is near the center, one is South of Madison, and the 2 others are on the East. Note that aside from the central stop, Megan concluded that these general areas have a low level of service indicated by their possible farthest distance travelled assuming no transfers. This simulation was done starting at 12 o clock noon for 30 minutes.</span></p>
+<p><span>We can see that starting at the central stop by far leads to the highest area coverage. In fact, the area coverage from the central stop is more than the sum of the other 3.</span></p>
+<p><span>The area covered in 30 minutes is quite low for the any stop other than the central. The area coverage is low enough to where people may decide to just walk from one place to another. In the case of spontaneous travel, for people near these stops, the bus system may not be an efficient way of travelling, especially not for long distance travel.</span></p>
+<p><span>To conclude, Megan’s analysis did accurately reflect the areas which are underprovided in the bus service. The benefit of using the simulator here is that we were able to better quantify as well as visualize the difference in the level of service between each area.</span></p>
+<h2 id="Which-Areas-are-Under-and-Overprovided-in-Regards-to-the-Bus-Transit-Service-Level" data-id="Which-Areas-are-Under-and-Overprovided-in-Regards-to-the-Bus-Transit-Service-Level"><a class="anchor hidden-xs" href="#Which-Areas-are-Under-and-Overprovided-in-Regards-to-the-Bus-Transit-Service-Level" title="Which-Areas-are-Under-and-Overprovided-in-Regards-to-the-Bus-Transit-Service-Level"><span class="octicon octicon-link"></span></a><span>Which Areas are Under and Overprovided in Regards to the Bus Transit Service Level?</span></h2>
+<p><span>We want to determine bus stops and routes that need to changed,  especially in regards to location. Here, we divided Madison to its individual wards and analyzed the level of bus service in each ward. Every ward has unique features such as average income levels, population density, racial composition, and average age.</span></p>
+<img src="https://i.imgur.com/OZfD8bL.png" width="10000" height="">
+<p></p>
+<center><strong>Figure: Average Area Covered for Each Ward <br></strong></center>
+<br><br><br><br>
+<p><span>Here we can see the level of bus service provided in each Ward and in this case we used the average possible area coverage in 30 minutes time as an indicator of the level of service for each ward. The boundaries for each aldermanic district are shown on the plot.</span></p>
+<p><span>As there are many possible starting stops within each ward, we simulated the area covered by each of those stops and took the average for each ward. To account for fluctuations with area coverage over time, we simulated this process over 3 starting times and took the highest for our final area coverage value. We can see that starting the central area of Madison generally leads to a higher area coverage, meaning that they have a higher level of service there. This makes sense since there is a high density of people, most of whom are likely students or workers, which means demand is also higher.</span></p>
+<p><br><br><br><br></p>
+<img src="https://i.imgur.com/IC7ScQx.png" width="10000" height="">
+<p></p>
+<center><strong>Figure: Population Density against Average Area Coverage <br></strong></center>
+<br><br>
+<p><span>Here we analyzed the relationship between Population Density and the Average Area Covered in Madison. Each point on the plot represents a ward in Madison. As we can see here, while there appears to be a slight positive correlation, the spread on the data is quite large.</span></p>
+<p><span>In Jared Walker’s book about Bus transit, he mentions that the goal of a bus system has 2 extremes, and these are maximizing either ridership or coverage. If the Madison bus system was entirely focused on coverage, we would see that the possible area coverage on the plot above would be relatively horizontal. If instead the goal was to only maximize ridership, there wouild be much less spread and perhaps a clearer correlation between population density and the area coverage. The main takeaway from this plot is that Madison’s Metro bus system does not focus entirely on one extreme but rather a combination of maximising ridership while ensuring that a similar service is provided in less populated areas. </span><br><br></p>
+<img src="https://i.imgur.com/ozxCIbD.png" width="10000" height="">
+<p></p>
+<center><strong>Figure: Area Coverage to Population Density Ratio <br></strong></center>
+<br><br>
+<p><span>The map above is a visualization for the previous scatterplot. Each ward is assigned a value of its average coverage against population density ratio, we can also see that the black outline divides Madison to its aldermanic districts. While there is no clear trend here, we can see that the ratio of average area coverage to population density varies from as low as 0.025 to almost 0.2.</span></p>
+<img src="https://i.imgur.com/zkdK0vy.jpg" width="800" height="">
+<br>
+<br>
+<center><strong>Figure: Population with respect to Regions</strong></center>
+<br>
+<p><span>As the above figure shown, we categorized the City of Madison by locations. There are 3 in the West and East, 1 in the North and South, Downtown, and UW-Madison.</span></p>
+<p><span>In doing so, it allows for a more efficient estimation and we can more clearly identify the area that has over/under-provided level of service.</span></p>
+<img src="https://i.imgur.com/XQroX3Z.jpg" width="800" height="">
+<br>
+<center><strong>Figure: Overall Views of Service Level based on Regions</strong></center>
+<br>
+<p><span>Looking at the </span><em><span>Average Area Coverage, Population, and Ridership</span></em><span> bar figure, the region names are sorted by </span><strong><span>Area Coverage</span></strong><span> ascending from top to bottom.</span></p>
+<p><span>Three interesting cases observed above are the North East, the UW Madison and the South West areas:</span></p>
+<p><span>The North East area has the lowest </span><em><span>population</span></em><span> among all regions, and is very low in </span><em><span>ridership</span></em><span>, but a relatively high </span><em><span>average area coverage</span></em><span> throughout the day.</span></p>
+<p><span>In UW Madison, despite less </span><em><span>population</span></em><span>, it has the highest number of </span><em><span>ridership</span></em><span> and </span><em><span>average area coverage</span></em><span>. This makes sense because many students and staffs commute via the metro transit during the school season.</span></p>
+<p><span>Finally, although both the </span><em><span>average area coverage</span></em><span> and </span><em><span>population</span></em><span> are rather high in the South West, in comparison to other regions, it has a very low amount of </span><em><span>ridership</span></em><span>, and we could infer that the residents in this area drive more often than taking buses.</span></p>
+<p><span>In general, the West regions have higher area coverage over the East; however, this sounds right to me because both population and ridership in the West is higher than the East, and the same thing works for that in Downtown, which has the highest population and the second highest ridership.</span></p>
+<h2 id="Future-Prospects-of-the-Project" data-id="Future-Prospects-of-the-Project"><a class="anchor hidden-xs" href="#Future-Prospects-of-the-Project" title="Future-Prospects-of-the-Project"><span class="octicon octicon-link"></span></a><span>Future Prospects of the Project</span></h2>
+<ul>
+<li><span>Inserting bus delays and measure the impact</span></li>
+<li><span>Remove each route and compare the impact</span></li>
+<li><span>Enable planned trip simulation</span></li>
+<li><span>Measure important services reachable besides area coverage</span></li>
+<li><span>Provide a simple interface for adding/removing routes or stops</span></li>
+</ul>
+<p><span>In the future, we can add more features to better measure the bus system. To better simulate the real world, we can insert bus delays into the system and measure the impact. We can also make our simulated riders “smarter” and “plan” for their trip to avoid unnecessary waits at a bus stop.</span></p>
+<p><span>Besides the general area coverage metrics, we can also measure the important services reachable such as grocery store and dentist. Finally, we can provide a simple interface for researchers to add or remove routes and stops so they can quickly compute metrics against their proposed routes.</span></p>
+</div></div></div></div></div>
+    <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
+        <div class="pull-right dropdown">
+            <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
+                <div class="toc"><ul class="nav">
+<li class=""><a href="#Final-Report" title="Final Report">Final Report</a></li>
+<li><a href="#Madison-Metro-Accessibility-Analysis" title="Madison Metro Accessibility Analysis">Madison Metro Accessibility Analysis</a><ul class="nav">
+<li><a href="#Motivation" title="Motivation:">Motivation:</a></li>
+</ul>
+</li>
+<li><a href="#Introduction-to-Madison-Metro-Transit" title="Introduction to Madison Metro Transit">Introduction to Madison Metro Transit</a><ul class="nav">
+<li class="invisable-node"><ul class="nav">
+<li><a href="#How-Does-Madison-Metro-Transit-Do-Comparing-With-Wisconsin-State-and-The-US" title="How Does Madison Metro Transit Do, Comparing With Wisconsin State and The U.S.?">How Does Madison Metro Transit Do, Comparing With Wisconsin State and The U.S.?</a></li>
+</ul>
+</li>
+<li><a href="#Accessibility-to-Metro-Transit-in-terms-of-Land-Use" title="Accessibility to Metro Transit in terms of Land Use">Accessibility to Metro Transit in terms of Land Use</a><ul class="nav">
+<li><a href="#Which-District-Has-Higher-Accessibility-To-Metro-Transit-with-respect-to-Distance" title="Which District Has Higher Accessibility To Metro Transit with respect to Distance?">Which District Has Higher Accessibility To Metro Transit with respect to Distance?</a></li>
+<li><a href="#Which-District-Has-Higher-Accessibility-to-Metro-Transit-in-terms-of-Time-Spent" title="Which District Has Higher Accessibility to Metro Transit in terms of Time Spent?">Which District Has Higher Accessibility to Metro Transit in terms of Time Spent?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Measures-of-Productivity-in-the-Transit-Industry" title="Measures of Productivity in the Transit Industry">Measures of Productivity in the Transit Industry</a><ul class="nav">
+<li><a href="#How-productive-is-Madison’s-Metro-Transit-System" title="How productive is Madison’s Metro Transit System?">How productive is Madison’s Metro Transit System?</a></li>
+<li><a href="#Supply-Side-Outputs" title="Supply Side Outputs">Supply Side Outputs</a><ul class="nav">
+<li><a href="#Vehicle-Revenue-Miles" title="Vehicle Revenue Miles">Vehicle Revenue Miles</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+            </ul>
+        </div>
+    </div>
+    <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;" null null>
+        <div class="toc"><ul class="nav">
+<li class=""><a href="#Final-Report" title="Final Report">Final Report</a></li>
+<li><a href="#Madison-Metro-Accessibility-Analysis" title="Madison Metro Accessibility Analysis">Madison Metro Accessibility Analysis</a><ul class="nav">
+<li><a href="#Motivation" title="Motivation:">Motivation:</a></li>
+</ul>
+</li>
+<li><a href="#Introduction-to-Madison-Metro-Transit" title="Introduction to Madison Metro Transit">Introduction to Madison Metro Transit</a><ul class="nav">
+<li class="invisable-node"><ul class="nav">
+<li><a href="#How-Does-Madison-Metro-Transit-Do-Comparing-With-Wisconsin-State-and-The-US" title="How Does Madison Metro Transit Do, Comparing With Wisconsin State and The U.S.?">How Does Madison Metro Transit Do, Comparing With Wisconsin State and The U.S.?</a></li>
+</ul>
+</li>
+<li><a href="#Accessibility-to-Metro-Transit-in-terms-of-Land-Use" title="Accessibility to Metro Transit in terms of Land Use">Accessibility to Metro Transit in terms of Land Use</a><ul class="nav">
+<li><a href="#Which-District-Has-Higher-Accessibility-To-Metro-Transit-with-respect-to-Distance" title="Which District Has Higher Accessibility To Metro Transit with respect to Distance?">Which District Has Higher Accessibility To Metro Transit with respect to Distance?</a></li>
+<li><a href="#Which-District-Has-Higher-Accessibility-to-Metro-Transit-in-terms-of-Time-Spent" title="Which District Has Higher Accessibility to Metro Transit in terms of Time Spent?">Which District Has Higher Accessibility to Metro Transit in terms of Time Spent?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Measures-of-Productivity-in-the-Transit-Industry" title="Measures of Productivity in the Transit Industry">Measures of Productivity in the Transit Industry</a><ul class="nav">
+<li><a href="#How-productive-is-Madison’s-Metro-Transit-System" title="How productive is Madison’s Metro Transit System?">How productive is Madison’s Metro Transit System?</a></li>
+<li><a href="#Supply-Side-Outputs" title="Supply Side Outputs">Supply Side Outputs</a><ul class="nav">
+<li><a href="#Vehicle-Revenue-Miles" title="Vehicle Revenue Miles">Vehicle Revenue Miles</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.6.0/gist-embed.min.js" integrity="sha256-KyF2D6xPIJUW5sUDSs93vWyZm+1RzIpKCexxElmxl8g=" crossorigin="anonymous" defer></script>
+    <script>
+        var markdown = $(".markdown-body");
+        //smooth all hash trigger scrolling
+        function smoothHashScroll() {
+            var hashElements = $("a[href^='#']").toArray();
+            for (var i = 0; i < hashElements.length; i++) {
+                var element = hashElements[i];
+                var $element = $(element);
+                var hash = element.hash;
+                if (hash) {
+                    $element.on('click', function (e) {
+                        // store hash
+                        var hash = this.hash;
+                        if ($(hash).length <= 0) return;
+                        // prevent default anchor click behavior
+                        e.preventDefault();
+                        // animate
+                        $('body, html').stop(true, true).animate({
+                            scrollTop: $(hash).offset().top
+                        }, 100, "linear", function () {
+                            // when done, add hash to url
+                            // (default click behaviour)
+                            window.location.hash = hash;
+                        });
+                    });
+                }
+            }
+        }
+
+        smoothHashScroll();
+        var toc = $('.ui-toc');
+        var tocAffix = $('.ui-affix-toc');
+        var tocDropdown = $('.ui-toc-dropdown');
+        //toc
+        tocDropdown.click(function (e) {
+            e.stopPropagation();
+        });
+
+        var enoughForAffixToc = true;
+
+        function generateScrollspy() {
+            $(document.body).scrollspy({
+                target: ''
+            });
+            $(document.body).scrollspy('refresh');
+            if (enoughForAffixToc) {
+                toc.hide();
+                tocAffix.show();
+            } else {
+                tocAffix.hide();
+                toc.show();
+            }
+            $(document.body).scroll();
+        }
+
+        function windowResize() {
+            //toc right
+            var paddingRight = parseFloat(markdown.css('padding-right'));
+            var right = ($(window).width() - (markdown.offset().left + markdown.outerWidth() - paddingRight));
+            toc.css('right', right + 'px');
+            //affix toc left
+            var newbool;
+            var rightMargin = (markdown.parent().outerWidth() - markdown.outerWidth()) / 2;
+            //for ipad or wider device
+            if (rightMargin >= 133) {
+                newbool = true;
+                var affixLeftMargin = (tocAffix.outerWidth() - tocAffix.width()) / 2;
+                var left = markdown.offset().left + markdown.outerWidth() - affixLeftMargin;
+                tocAffix.css('left', left + 'px');
+            } else {
+                newbool = false;
+            }
+            if (newbool != enoughForAffixToc) {
+                enoughForAffixToc = newbool;
+                generateScrollspy();
+            }
+        }
+        $(window).resize(function () {
+            windowResize();
+        });
+        $(document).ready(function () {
+            windowResize();
+            generateScrollspy();
+        });
+
+        //remove hash
+        function removeHash() {
+            window.location.hash = '';
+        }
+
+        var backtotop = $('.back-to-top');
+        var gotobottom = $('.go-to-bottom');
+
+        backtotop.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToTop)
+                scrollToTop();
+            removeHash();
+        });
+        gotobottom.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToBottom)
+                scrollToBottom();
+            removeHash();
+        });
+
+        var toggle = $('.expand-toggle');
+        var tocExpand = false;
+
+        checkExpandToggle();
+        toggle.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            tocExpand = !tocExpand;
+            checkExpandToggle();
+        })
+
+        function checkExpandToggle () {
+            var toc = $('.ui-toc-dropdown .toc');
+            var toggle = $('.expand-toggle');
+            if (!tocExpand) {
+                toc.removeClass('expand');
+                toggle.text('Expand all');
+            } else {
+                toc.addClass('expand');
+                toggle.text('Collapse all');
+            }
+        }
+
+        function scrollToTop() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: 0
+            }, 100, "linear");
+        }
+
+        function scrollToBottom() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: $(document.body)[0].scrollHeight
+            }, 100, "linear");
+        }
+    </script>
+</body>
+
+</html>
